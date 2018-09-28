@@ -8,7 +8,7 @@
 define('DB_USER', 'newuser');
 define('DB_PASSWORD', 'roots1');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'sitename');
+define('DB_NAME', 'forums');
 
 // Make the connection:
 $dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die('Could not connect to MySQL: ' . mysqli_connect_error() );

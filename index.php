@@ -2,8 +2,17 @@
 
 // This function outputs theoretical HTML
 // for adding ads to a Web page.
-function create_ad() {
-  echo '<div class="alert alert-info" role="alert"><p>This is an annoying ad! This is an annoying ad! This is an annoying ad! This is an annoying ad!</p></div>';
+
+function create_ad() 
+{
+    echo '<div class="alert alert-info" role="alert"><p>';
+    
+    $ad_text = 'This is an annoying ad! ';
+    for($x = 0; $x < 5; $x++) //FOR -loop for ad printing
+    {
+        echo $ad_text;
+    }
+    echo '</p></div>';
 } // End of the function definition.
 
 $page_title = 'Welcome to this Site!';
@@ -29,8 +38,8 @@ create_ad();
     <tr>
         <td>Create</td>
         <td>INSERT</td>
-        <td>Put/Post</td>
-        <td>Post</td>
+        <td>PUT / POST</td>
+        <td>POST</td>
         <td>write</td>
     </tr>
     <tr>
